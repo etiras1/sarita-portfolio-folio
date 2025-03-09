@@ -172,7 +172,7 @@ const Index = () => {
                 View All Projects
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
-          </div>
+            </div>
         </div>
       </section>
       
@@ -200,7 +200,7 @@ const Index = () => {
               </Link>
               <Link to="/projects">
                 <Button variant="outline" size="lg">
-                  View My Work
+                  View My Services
                 </Button>
               </Link>
             </div>

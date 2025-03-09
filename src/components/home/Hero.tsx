@@ -64,7 +64,7 @@ export function Hero() {
                 className="w-full h-full"
               >
                 <img
-                  src="http://saritaneupane.com.np/assets/images/profile.jpg"
+                  src="https://saritaneupane.com.np/assets/images/Sarita.jpg"
                   alt="Sarita Neupane"
                   className="w-full h-full object-cover"
                   onError={(e) => {

@@ -52,7 +52,7 @@ const About = () => {
         <div className="relative">
           <div className="w-full aspect-square rounded-lg overflow-hidden glass">
             <img
-              src="http://saritaneupane.com.np/assets/images/about-page.jpg"
+              src="https://saritaneupane.com.np/assets/images/Sarita.jpg"
               alt="Sarita Neupane"
               className="w-full h-full object-cover opacity-0 animate-scale-up"
               style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}

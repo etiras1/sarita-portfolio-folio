@@ -1,22 +1,8 @@
-
 import { useEffect } from "react";
 import { AnimatedText } from "@/components/ui/AnimatedText";
 import { Card, CardContent } from "@/components/ui/card";
 import { QuoteIcon } from "lucide-react";
-
-// Custom Card component that accepts delay prop for animation
-const AnimatedCard = ({ children, className = "", delay = 0 }) => {
-  return (
-    <div 
-      className={`opacity-0 animate-slide-up ${className}`} 
-      style={{ animationDelay: `${delay}ms`, animationFillMode: 'forwards' }}
-    >
-      <Card className={className}>
-        {children}
-      </Card>
-    </div>
-  );
-};
+import { AnimatedCard } from "@/components/ui/AnimatedCard";
 
 const testimonials = [
   {
@@ -79,7 +65,7 @@ const Testimonials = () => {
       
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
         {testimonials.map((testimonial, index) => (
-          <AnimatedCard key={testimonial.name} delay={index * 100} className="flex flex-col">
+          <AnimatedCard key={testimonial.name} delay={index * 100}>
             <CardContent className="pt-6 flex-grow flex flex-col">
               <div className="mb-4 text-primary">
                 <QuoteIcon className="h-6 w-6" />

@@ -1,19 +1,29 @@
 
 import React from "react";
-import { Card, CardProps } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
+import { cn } from "@/lib/utils";
 
-interface AnimatedCardProps extends CardProps {
+interface AnimatedCardProps extends React.HTMLAttributes<HTMLDivElement> {
   delay?: number;
   children: React.ReactNode;
 }
 
-export const AnimatedCard = ({ delay = 0, children, className, ...props }: AnimatedCardProps) => {
+export const AnimatedCard = ({ 
+  delay = 0, 
+  children, 
+  className, 
+  ...props 
+}: AnimatedCardProps) => {
   return (
     <div 
-      className={`opacity-0 animate-slide-up ${className}`} 
+      className={cn(
+        "opacity-0 animate-slide-up",
+        className
+      )}
       style={{ animationDelay: `${delay}ms`, animationFillMode: 'forwards' }}
+      {...props}
     >
-      <Card {...props}>
+      <Card>
         {children}
       </Card>
     </div>

@@ -1,7 +1,8 @@
+
 import { useEffect } from "react";
 import { AnimatedText } from "@/components/ui/AnimatedText";
 import { Card, CardTitle, CardContent, CardFooter } from "@/components/ui/Card";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import { Link } from "react-router-dom";
 

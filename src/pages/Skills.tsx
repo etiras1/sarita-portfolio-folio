@@ -1,10 +1,9 @@
-
 import { useEffect } from "react";
 import { AnimatedText } from "@/components/ui/AnimatedText";
 import { Card } from "@/components/ui/Card";
 import { Progress } from "@/components/ui/progress";
 import { ArrowRight, Code, Database, Layout, Server, Terminal, GitBranch, Globe, LineChart } from "lucide-react";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 
 const skillCategories = [
   {

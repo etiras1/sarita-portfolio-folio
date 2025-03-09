@@ -1,9 +1,9 @@
-
 import { useEffect } from "react";
 import { AnimatedText } from "@/components/ui/AnimatedText";
 import { Card, CardTitle, CardContent, CardFooter } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { ExternalLink, Github } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
@@ -105,14 +105,18 @@ const Projects = () => {
               </CardContent>
               
               <CardFooter className="p-0 flex justify-between">
-                <Button href={project.liveLink} isExternal variant="ghost" size="sm">
-                  Live Demo
-                  <ExternalLink className="ml-2 h-4 w-4" />
-                </Button>
-                <Button href={project.githubLink} isExternal variant="ghost" size="sm">
-                  GitHub
-                  <Github className="ml-2 h-4 w-4" />
-                </Button>
+                <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                  <Button variant="ghost" size="sm">
+                    Live Demo
+                    <ExternalLink className="ml-2 h-4 w-4" />
+                  </Button>
+                </a>
+                <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                  <Button variant="ghost" size="sm">
+                    GitHub
+                    <Github className="ml-2 h-4 w-4" />
+                  </Button>
+                </a>
               </CardFooter>
             </div>
           </Card>

@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { AnimatedText } from "@/components/ui/AnimatedText";
 import { Card } from "@/components/ui/Card";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 import { Mail, Phone, Send, Github, Linkedin, Twitter } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -93,15 +93,21 @@ const Contact = () => {
           <h3 className="heading-sm mt-10 mb-6">Connect With Me</h3>
           
           <div className="flex gap-4">
-            <Button variant="outline" size="icon" isExternal href="https://github.com">
-              <Github className="h-5 w-5" />
-            </Button>
-            <Button variant="outline" size="icon" isExternal href="https://linkedin.com">
-              <Linkedin className="h-5 w-5" />
-            </Button>
-            <Button variant="outline" size="icon" isExternal href="https://twitter.com">
-              <Twitter className="h-5 w-5" />
-            </Button>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="icon">
+                <Github className="h-5 w-5" />
+              </Button>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="icon">
+                <Linkedin className="h-5 w-5" />
+              </Button>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="icon">
+                <Twitter className="h-5 w-5" />
+              </Button>
+            </a>
           </div>
         </Card>
         

@@ -1,9 +1,9 @@
-
 import { useEffect } from "react";
 import { AnimatedText } from "@/components/ui/AnimatedText";
 import { Card, CardTitle, CardContent, CardFooter } from "@/components/ui/Card";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const blogPosts = [
   {
@@ -111,10 +111,12 @@ const Blog = () => {
               </CardContent>
               
               <CardFooter className="p-0">
-                <Button variant="ghost" size="sm">
-                  Read More
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                <Link to="#">
+                  <Button variant="ghost" size="sm">
+                    Read More
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
               </CardFooter>
             </div>
           </Card>

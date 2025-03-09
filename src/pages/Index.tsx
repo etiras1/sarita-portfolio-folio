@@ -1,10 +1,9 @@
-
 import { Hero } from "@/components/home/Hero";
 import { AboutPreview } from "@/components/home/About";
 import { useEffect } from "react";
 import { Card, CardTitle, CardContent, CardFooter } from "@/components/ui/Card";
 import { AnimatedText } from "@/components/ui/AnimatedText";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 import { ExternalLink, ArrowRight, Code, Layout, Server, Database } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -111,10 +110,12 @@ const Index = () => {
           </div>
           
           <div className="mt-12 text-center">
-            <Button href="/skills">
-              View All Skills
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+            <Link to="/skills">
+              <Button>
+                View All Skills
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -166,10 +167,11 @@ const Index = () => {
           </div>
           
           <div className="mt-12 text-center">
-            <Button href="/projects">
-              View All Projects
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+            <Link to="/projects">
+              <Button>
+                View All Projects
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
           </div>
         </div>
       </section>
@@ -190,13 +192,17 @@ const Index = () => {
             </p>
             
             <div className="flex flex-wrap justify-center gap-4 opacity-0 animate-slide-up" style={{ animationDelay: '400ms', animationFillMode: 'forwards' }}>
-              <Button href="/contact" size="lg">
-                Get in Touch
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-              <Button href="/projects" variant="outline" size="lg">
-                View My Work
-              </Button>
+              <Link to="/contact">
+                <Button size="lg">
+                  Get in Touch
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
+              <Link to="/projects">
+                <Button variant="outline" size="lg">
+                  View My Work
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

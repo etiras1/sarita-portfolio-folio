@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import { AnimatedText } from "@/components/ui/AnimatedText";
 import { Card } from "@/components/ui/card";
+import { AnimatedCard } from "@/components/ui/AnimatedCard";
 import { Progress } from "@/components/ui/progress";
 import { ArrowRight, Code, Database, Layout, Server, Terminal, GitBranch, Globe, LineChart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -184,7 +185,7 @@ const Skills = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {technicalSkills.map((skill, index) => (
-              <Card key={skill.category} delay={index * 100}>
+              <AnimatedCard key={skill.category} delay={index * 100}>
                 <div className="flex items-center gap-3 mb-4">
                   <div className="p-2 rounded-md bg-primary/10">
                     {skill.icon}
@@ -199,7 +200,7 @@ const Skills = () => {
                     </span>
                   ))}
                 </div>
-              </Card>
+              </AnimatedCard>
             ))}
           </div>
         </div>

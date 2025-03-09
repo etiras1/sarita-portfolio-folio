@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { QuoteIcon } from "lucide-react";
 
 // Custom Card component that accepts delay prop for animation
-const AnimatedCard = ({ children, className, delay = 0 }) => {
+const AnimatedCard = ({ children, className = "", delay = 0 }) => {
   return (
     <div 
       className={`opacity-0 animate-slide-up ${className}`} 

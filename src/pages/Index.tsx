@@ -2,7 +2,8 @@
 import { Hero } from "@/components/home/Hero";
 import { AboutPreview } from "@/components/home/About";
 import { useEffect } from "react";
-import { Card, CardTitle, CardContent, CardFooter } from "@/components/ui/card";
+import { CardTitle, CardContent, CardFooter } from "@/components/ui/card";
+import { AnimatedCard } from "@/components/ui/AnimatedCard";
 import { AnimatedText } from "@/components/ui/AnimatedText";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, ArrowRight, Code, Layout, Server, Database } from "lucide-react";
@@ -89,7 +90,7 @@ const Index = () => {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {skillCategories.map((category, index) => (
-              <Card key={category.title} delay={index * 100}>
+              <AnimatedCard key={category.title} delay={index * 100}>
                 <div className="p-4 rounded-full bg-primary/10 w-fit mb-4">
                   {category.icon}
                 </div>
@@ -106,7 +107,7 @@ const Index = () => {
                     ))}
                   </div>
                 </CardContent>
-              </Card>
+              </AnimatedCard>
             ))}
           </div>
           
@@ -143,7 +144,7 @@ const Index = () => {
           
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {featuredProjects.map((project, index) => (
-              <Card key={project.title} delay={index * 100}>
+              <AnimatedCard key={project.title} delay={index * 100}>
                 <CardTitle>{project.title}</CardTitle>
                 
                 <CardContent className="mt-2">
@@ -163,7 +164,7 @@ const Index = () => {
                     <ExternalLink className="ml-2 h-4 w-4" />
                   </Link>
                 </CardFooter>
-              </Card>
+              </AnimatedCard>
             ))}
           </div>
           

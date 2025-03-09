@@ -1,7 +1,8 @@
 
 import { useEffect } from "react";
 import { AnimatedText } from "@/components/ui/AnimatedText";
-import { Card, CardTitle, CardContent, CardFooter } from "@/components/ui/card";
+import { CardTitle, CardContent, CardFooter } from "@/components/ui/card";
+import { AnimatedCard } from "@/components/ui/AnimatedCard";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -79,7 +80,7 @@ const Blog = () => {
       
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
         {blogPosts.map((post, index) => (
-          <Card key={post.title} delay={index * 100}>
+          <AnimatedCard key={post.title} delay={index * 100}>
             <div className="w-full aspect-video overflow-hidden rounded-t-md">
               <img
                 src={post.image}
@@ -120,7 +121,7 @@ const Blog = () => {
                 </Link>
               </CardFooter>
             </div>
-          </Card>
+          </AnimatedCard>
         ))}
       </div>
     </div>

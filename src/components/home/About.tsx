@@ -2,6 +2,7 @@
 import { ArrowRight } from "lucide-react";
 import { AnimatedText } from "@/components/ui/AnimatedText";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 export function AboutPreview() {
   return (
@@ -47,10 +48,12 @@ export function AboutPreview() {
             </div>
             
             <div className="mt-8 opacity-0 animate-slide-up" style={{ animationDelay: '600ms', animationFillMode: 'forwards' }}>
-              <Button href="/about" variant="outline">
-                More About Me
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
+              <Link to="/about">
+                <Button variant="outline">
+                  More About Me
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,8 +1,10 @@
+
 import { useEffect } from "react";
 import { AnimatedText } from "@/components/ui/AnimatedText";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const About = () => {
   useEffect(() => {
@@ -277,13 +279,17 @@ const About = () => {
             </p>
             
             <div className="flex flex-wrap justify-center gap-4 opacity-0 animate-slide-up" style={{ animationDelay: '400ms', animationFillMode: 'forwards' }}>
-              <Button href="/contact" size="lg">
-                Contact Me
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-              <Button href="/projects" variant="outline" size="lg">
-                View My Projects
-              </Button>
+              <Link to="/contact">
+                <Button size="lg">
+                  Contact Me
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
+              <Link to="/projects">
+                <Button variant="outline" size="lg">
+                  View My Projects
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/Card";
 import { Progress } from "@/components/ui/progress";
 import { ArrowRight, Code, Database, Layout, Server, Terminal, GitBranch, Globe, LineChart } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const skillCategories = [
   {
@@ -320,13 +321,17 @@ const Skills = () => {
             </p>
             
             <div className="flex flex-wrap justify-center gap-4 opacity-0 animate-slide-up" style={{ animationDelay: '400ms', animationFillMode: 'forwards' }}>
-              <Button href="/contact" size="lg">
-                Get in Touch
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-              <Button href="/projects" variant="outline" size="lg">
-                View My Projects
-              </Button>
+              <Link to="/contact">
+                <Button size="lg">
+                  Get in Touch
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
+              <Link to="/projects">
+                <Button variant="outline" size="lg">
+                  View My Projects
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

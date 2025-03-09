@@ -6,9 +6,14 @@ import { QuoteIcon } from "lucide-react";
 // Custom Card component that accepts delay prop for animation
 const AnimatedCard = ({ children, className, delay = 0 }) => {
   return (
-    <Card className={`opacity-0 animate-slide-up ${className}`} style={{ animationDelay: `${delay}ms`, animationFillMode: 'forwards' }}>
-      {children}
-    </Card>
+    <div 
+      className={`opacity-0 animate-slide-up ${className}`} 
+      style={{ animationDelay: `${delay}ms`, animationFillMode: 'forwards' }}
+    >
+      <Card className={className}>
+        {children}
+      </Card>
+    </div>
   );
 };
 

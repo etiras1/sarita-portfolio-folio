@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { AnimatedText } from "@/components/ui/AnimatedText";
 import { Card } from "@/components/ui/Card";

@@ -1,7 +1,6 @@
-
 import { useEffect } from "react";
 import { AnimatedText } from "@/components/ui/AnimatedText";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -47,11 +46,11 @@ const About = () => {
                   className="w-full h-full"
                 >
                   <img
-                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    src="http://saritaneupane.com.np/assets/images/profile.jpg"
                     alt="Sarita Neupane"
                     className="w-full h-full object-cover"
                     onError={(e) => {
-                      e.currentTarget.src = "https://via.placeholder.com/600x800?text=Sarita+Neupane";
+                      e.currentTarget.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80";
                     }}
                   />
                 </motion.div>

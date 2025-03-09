@@ -1,7 +1,7 @@
 
 import { ArrowRight } from "lucide-react";
 import { AnimatedText } from "@/components/ui/AnimatedText";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 
 export function AboutPreview() {
   return (
@@ -11,12 +11,12 @@ export function AboutPreview() {
           <div className="relative">
             <div className="w-full aspect-[4/3] rounded-lg overflow-hidden glass">
               <img
-                src="https://images.unsplash.com/photo-1573497019236-61f323342eb4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                src="http://saritaneupane.com.np/assets/images/about.jpg"
                 alt="Sarita Neupane working"
                 className="w-full h-full object-cover opacity-0 animate-scale-up"
                 style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}
                 onError={(e) => {
-                  e.currentTarget.src = "https://via.placeholder.com/800x600?text=About+Sarita";
+                  e.currentTarget.src = "https://images.unsplash.com/photo-1573497019236-61f323342eb4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80";
                 }}
               />
             </div>

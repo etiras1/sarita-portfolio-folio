@@ -1,6 +1,7 @@
+
 import { useEffect } from "react";
 import { AnimatedText } from "@/components/ui/AnimatedText";
-import { Card, CardTitle, CardContent, CardFooter } from "@/components/ui/Card";
+import { Card, CardTitle, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";

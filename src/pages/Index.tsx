@@ -2,7 +2,7 @@
 import { Hero } from "@/components/home/Hero";
 import { AboutPreview } from "@/components/home/About";
 import { useEffect } from "react";
-import { Card, CardTitle, CardContent, CardFooter } from "@/components/ui/Card";
+import { Card, CardTitle, CardContent, CardFooter } from "@/components/ui/card";
 import { AnimatedText } from "@/components/ui/AnimatedText";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, ArrowRight, Code, Layout, Server, Database } from "lucide-react";

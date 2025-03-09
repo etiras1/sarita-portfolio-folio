@@ -1,6 +1,7 @@
+
 import { useEffect } from "react";
 import { AnimatedText } from "@/components/ui/AnimatedText";
-import { Card, CardContent } from "@/components/ui/Card";
+import { Card, CardContent } from "@/components/ui/card";
 import { QuoteIcon } from "lucide-react";
 
 // Custom Card component that accepts delay prop for animation

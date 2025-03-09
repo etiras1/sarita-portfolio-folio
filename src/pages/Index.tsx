@@ -1,3 +1,4 @@
+
 import { Hero } from "@/components/home/Hero";
 import { AboutPreview } from "@/components/home/About";
 import { useEffect } from "react";
@@ -171,8 +172,9 @@ const Index = () => {
               <Button>
                 View All Projects
                 <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </div>
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
       
